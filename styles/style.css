@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0 auto;
+  width: 1024px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  flex-grow: 1;
+}/*# sourceMappingURL=style.css.map */
