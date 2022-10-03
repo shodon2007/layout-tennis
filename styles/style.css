@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  background: url(../images/bg.png) no-repeat gray;
+  background-size: auto 100vh;
+  background-position: top;
+}
+
 .body {
   margin: 0 auto;
   width: 1024px;
@@ -12,8 +19,11 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__nav {
   flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=style.css.map */
