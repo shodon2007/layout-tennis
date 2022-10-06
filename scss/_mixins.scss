@@ -1,4 +1,4 @@
-@mixin bodyWidth {
+@mixin bodyWidth() {
     width: 1200px;
     margin: 0 auto;
 }
@@ -6,4 +6,5 @@
 @mixin mobileWidth() {
     width: 100vw;
     padding: 0 10px;
+    margin: 0;
 }

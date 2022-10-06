@@ -10,6 +10,20 @@
 </head>
 
 <body>
+    <div class="burger">
+        <div class="burger__body">
+            <div class="burger__title">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="burger__exit">
+                <img src="images/burger_exit.png" alt="exit"
+                    onclick="isBurger = isBurger === false ? showBurger() : hideBurger();">
+            </div>
+        </div>
+        <div class="burger__nav">
+            hello world
+        </div>
+    </div>
     <header>
         <div class="header__title">
             <img src="images/logo.png" alt="logo">
@@ -30,12 +44,12 @@
                 <img src="images/youtube_white.png" alt="youtube">
             </div>
             <div class="header__burger">
-                <img src="images/burger.png" alt="g">
+                <img src="images/burger.png" alt="g"
+                    onclick="isBurger = isBurger === false ? showBurger() : hideBurger();">
             </div>
         </div>
     </header>
-
-
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

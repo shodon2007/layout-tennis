@@ -1,11 +1,33 @@
 @import "_defaultSettings";
 @import "_mixins";
+@import "_vars";
 
 body {
-    background-image: url(../images/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover 100vh;
+    background: url($bg_image) center top/auto 100% no-repeat;
+}
+
+.burger {
+    display: none;
+}
+
+.header__burger {
+    display: none;
+}
+
+.burger {
+    display: none;
+    background-color: #888E93;
     width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.burger__body {
+    @include bodyWidth();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
 }
 
 header {
@@ -15,33 +37,33 @@ header {
     align-items: center;
 }
 
-.header__buttons {
-    align-items: center;
-}
-
 .header__title img {
+    cursor: pointer;
     max-width: 100%;
 }
 
 .header__nav a {
-    color: white;
+    color: $headerLinkColor;
     text-decoration: none;
     margin: 0 20px;
     transition: all 0.4s ease;
 
     &:hover {
-        color: black;
+        color: $headerLinkColorHover;
     }
 }
 
 .header__burger {
-    display: flex;
     align-items: center;
-    display: none;
 }
 
+.header__burger {
+    z-index: 2;
+}
+
+.burger__exit,
 .header__burger img {
-    width: 50px;
+    width: 30px;
 }
 
 .header__title {
@@ -54,20 +76,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20px;
+
 }
 
 .header__social img {
     max-width: 100%;
     margin: 0 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-
-
 @media (max-width: 1200px) {
-    header {
-        @include mobileWidth();
-    }
 
     .header__nav,
     .header__social {
