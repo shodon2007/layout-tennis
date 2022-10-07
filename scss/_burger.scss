@@ -1,0 +1,77 @@
+//--------------------------------------------------------------
+
+// Стили структуры
+.burger {
+    opacity: 0;
+    z-index: -1;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 20px 0;
+    transition: all 0.2s ease;
+}
+
+// Стили оформления
+.burger {
+    background-color: #888E93;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.burger__nav a {
+    text-decoration: none;
+}
+
+// Стили оформления
+.burger__nav a {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    @include hoverColor(0.4s, black);
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.burger__body {
+    @include bodyWidth();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.burger__nav {
+    @include bodyWidth();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.burger__exit img {
+    width: 30px;
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 1200px) {
+    .burger__body {
+        @include mobileWidth();
+    }
+
+    .burger__nav {
+        @include mobileWidth();
+    }
+}
+
+//--------------------------------------------------------------

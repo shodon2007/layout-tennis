@@ -3,8 +3,15 @@
     margin: 0 auto;
 }
 
+@mixin hoverColor($time, $color) {
+    transition: all $time ease;
+
+    &:hover {
+        color: $color;
+    }
+}
+
 @mixin mobileWidth() {
     width: 100vw;
     padding: 0 10px;
-    margin: 0;
 }

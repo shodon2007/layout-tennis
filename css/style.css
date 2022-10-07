@@ -80,24 +80,52 @@ select {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/gilroy/gilroy-medium.eot");
+  src: url("../fonts/gilroy/gilroy-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/gilroy-medium.woff") format("woff"), url("../fonts/gilroy/gilroy-medium.ttf") format("truetype"), url("../fonts/gilroy/gilroy-medium.svg#giroy") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/gilroy/gilroy-bold.eot");
+  src: url("../fonts/gilroy/gilroy-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/gilroy-bold.woff") format("woff"), url("../fonts/gilroy/gilroy-bold.ttf") format("truetype"), url("../fonts/gilroy/gilroy-bold.svg#giroy") format("svg");
+  font-style: normal;
+  font-weight: bold;
+}
 body {
-  background: url("../images/bg.png") center top/auto 100% no-repeat;
+  background: url(../images/bg.png) center top/auto 100% no-repeat;
+  font-family: gilroy;
 }
 
 .burger {
-  display: none;
-}
-
-.header__burger {
-  display: none;
-}
-
-.burger {
-  display: none;
-  background-color: #888E93;
+  opacity: 0;
+  z-index: -1;
+  display: block;
   width: 100vw;
   height: 100vh;
   position: fixed;
+  padding: 20px 0;
+  transition: all 0.2s ease;
+}
+
+.burger {
+  background-color: #888E93;
+}
+
+.burger__nav a {
+  text-decoration: none;
+}
+
+.burger__nav a {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+.burger__nav a:hover {
+  color: black;
 }
 
 .burger__body {
@@ -109,7 +137,44 @@ body {
   vertical-align: center;
 }
 
+.burger__nav {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
+.burger__exit img {
+  width: 30px;
+}
+
+@media (max-width: 1200px) {
+  .burger__body {
+    width: 100vw;
+    padding: 0 10px;
+  }
+  .burger__nav {
+    width: 100vw;
+    padding: 0 10px;
+  }
+}
+.header__burger {
+  display: none;
+  align-items: center;
+}
+
 header {
+  padding: 20px 0;
+}
+
+header {
+  border-bottom: 2px solid white;
+}
+
+.header__body {
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -118,29 +183,28 @@ header {
 }
 
 .header__title img {
-  cursor: pointer;
   max-width: 100%;
 }
 
+.header__title img {
+  cursor: pointer;
+}
+
 .header__nav a {
-  color: white;
-  text-decoration: none;
   margin: 0 20px;
+}
+
+.header__nav a {
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
   transition: all 0.4s ease;
+  text-decoration: none;
 }
 .header__nav a:hover {
   color: black;
 }
 
-.header__burger {
-  align-items: center;
-}
-
-.header__burger {
-  z-index: 2;
-}
-
-.burger__exit,
 .header__burger img {
   width: 30px;
 }
@@ -149,6 +213,7 @@ header {
   display: flex;
   justify-content: center;
   vertical-align: center;
+  align-items: center;
 }
 
 .header__social {
@@ -161,16 +226,30 @@ header {
   max-width: 100%;
   margin: 0 5px;
 }
+
 .header__social img:hover {
   cursor: pointer;
 }
 
 @media (max-width: 1200px) {
-  .header__nav,
-.header__social {
+  .header__body {
+    width: 100vw;
+    padding: 0 10px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__social {
     display: none;
   }
   .header__burger {
     display: flex;
   }
+}
+.first-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
 }
