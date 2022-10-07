@@ -1,3 +1,5 @@
+//--------------------------------------------------------------
+
 // Стили структуры
 .first-screen {
     display: flex;
@@ -6,3 +8,121 @@
     width: 100vw;
     height: 100vh;
 }
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.first-screen__title {
+    @include bodyWidth();
+    display: flex;
+    flex-direction: column;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.first-screen__text {
+    word-wrap: break-word;
+}
+
+// Стили оформления
+.first-screen__text {
+    color: white;
+    font-size: 2.5em;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.first-screen__video {
+    display: flex;
+    align-items: center;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.video__text {
+    margin-left: 30px;
+}
+
+// Стили оформления 
+.video__text {
+    color: white;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.first-screen__cards {
+    @include bodyWidth();
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.cards__card {
+    cursor: pointer;
+    background-color: #8D86C9;
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//--------------------------------------------------------------
+
+.card__link img {
+    max-width: 20px;
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 1200px) {
+    .first-screen__title {
+        @include mobileWidth();
+    }
+
+    .first-screen__cards {
+        @include mobileWidth();
+    }
+
+    .first-screen__text {
+        font-size: 2em;
+    }
+
+    .video__text {
+        margin-left: 20px;
+    }
+
+    .first-screen__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 320px) {
+    .first-screen__text {
+        font-size: 1em;
+    }
+
+    .video__text {
+        font-size: 0.7em;
+    }
+
+    .video__img {
+        width: 30px;
+    }
+
+    .video__text {
+        margin-left: 10px;
+    }
+}
+
+//--------------------------------------------------------------

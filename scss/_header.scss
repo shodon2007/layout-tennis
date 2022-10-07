@@ -65,7 +65,7 @@ header {
 // Стили структуры
 .header__title {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     vertical-align: center;
     align-items: center;
 }
@@ -111,6 +111,22 @@ header {
 
     .header__burger {
         display: flex;
+    }
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 320px) {
+    header {
+        padding: 5px 0;
+    }
+
+    .header__burger img {
+        width: 20px;
+    }
+
+    .header__title img {
+        max-width: 70%;
     }
 }
 

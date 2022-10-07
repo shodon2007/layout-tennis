@@ -95,7 +95,7 @@ select {
   font-weight: bold;
 }
 body {
-  background: url(../images/bg.png) center top/auto 100% no-repeat;
+  background: url(../images/bg.png) center top/cover no-repeat;
   font-family: gilroy;
 }
 
@@ -211,7 +211,7 @@ header {
 
 .header__title {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   vertical-align: center;
   align-items: center;
 }
@@ -246,10 +246,107 @@ header {
     display: flex;
   }
 }
+@media (max-width: 320px) {
+  header {
+    padding: 5px 0;
+  }
+  .header__burger img {
+    width: 20px;
+  }
+  .header__title img {
+    max-width: 70%;
+  }
+}
 .first-screen {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100vw;
   height: 100vh;
+}
+
+.first-screen__title {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-screen__text {
+  word-wrap: break-word;
+}
+
+.first-screen__text {
+  color: white;
+  font-size: 2.5em;
+}
+
+.first-screen__video {
+  display: flex;
+  align-items: center;
+}
+
+.video__text {
+  margin-left: 30px;
+}
+
+.video__text {
+  color: white;
+}
+
+.first-screen__cards {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.cards__card {
+  cursor: pointer;
+  background-color: #8D86C9;
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__link img {
+  max-width: 20px;
+}
+
+@media (max-width: 1200px) {
+  .first-screen__title {
+    width: 100vw;
+    padding: 0 10px;
+  }
+  .first-screen__cards {
+    width: 100vw;
+    padding: 0 10px;
+  }
+  .first-screen__text {
+    font-size: 2em;
+  }
+  .video__text {
+    margin-left: 20px;
+  }
+  .first-screen__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (max-width: 320px) {
+  .first-screen__text {
+    font-size: 1em;
+  }
+  .video__text {
+    font-size: 0.7em;
+  }
+  .video__img {
+    width: 30px;
+  }
+  .video__text {
+    margin-left: 10px;
+  }
 }
