@@ -3,9 +3,10 @@
 @import "_mixins";
 
 body {
-    background: url(../images/bg.png) center top/cover no-repeat;
     font-family: gilroy;
 }
+
+
 
 @import "_burger";
 @import "_header";

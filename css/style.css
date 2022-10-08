@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE и Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -95,7 +108,6 @@ select {
   font-weight: bold;
 }
 body {
-  background: url(../images/bg.png) center top/cover no-repeat;
   font-family: gilroy;
 }
 
@@ -278,6 +290,7 @@ header {
   }
 }
 .first-screen {
+  background: url(../images/bg.png) center top/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
