@@ -59,14 +59,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 //--------------------------------------------------------------
 
 // Стили структуры
 .cards__card {
-    cursor: pointer;
-    background-color: #8D86C9;
     flex-grow: 1;
     padding: 20px;
     display: flex;
@@ -74,8 +74,22 @@
     align-items: center;
 }
 
+// Стили оформления
+.cards__card {
+    cursor: pointer;
+    background-color: #8D86C9;
+    color: white;
+    font-weight: 700;
+    @include hoverColor(0.4s, black);
+
+    &:hover {
+        background-color: #474365;
+    }
+}
+
 //--------------------------------------------------------------
 
+// Стили структуры
 .card__link img {
     max-width: 20px;
 }
@@ -107,9 +121,18 @@
 
 //--------------------------------------------------------------
 
+@media (max-width: 460px) {
+    .first-screen__cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+//--------------------------------------------------------------
+
 @media (max-width: 320px) {
     .first-screen__text {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .video__text {

@@ -300,16 +300,31 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
 }
 
 .cards__card {
-  cursor: pointer;
-  background-color: #8D86C9;
   flex-grow: 1;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.cards__card {
+  cursor: pointer;
+  background-color: #8D86C9;
+  color: white;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+.cards__card:hover {
+  color: black;
+}
+.cards__card:hover {
+  background-color: #474365;
 }
 
 .card__link img {
@@ -336,9 +351,15 @@ header {
     grid-template-rows: repeat(2, 1fr);
   }
 }
+@media (max-width: 460px) {
+  .first-screen__cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
 @media (max-width: 320px) {
   .first-screen__text {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .video__text {
     font-size: 0.7em;
