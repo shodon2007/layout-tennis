@@ -19,6 +19,12 @@
 
 //--------------------------------------------------------------
 
+// Стили оформления
+.burger__title {
+    cursor: pointer;
+}
+
+//--------------------------------------------------------------
 // Стили структуры
 .burger__nav a {
     text-decoration: none;
@@ -59,6 +65,7 @@
 
 // Стили структуры
 .burger__exit img {
+    cursor: pointer;
     width: 30px;
 }
 
@@ -71,6 +78,22 @@
 
     .burger__nav {
         @include mobileWidth();
+    }
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 320px) {
+    .burger {
+        padding: 5px 0;
+    }
+
+    .burger__exit img {
+        width: 20px;
+    }
+
+    .burger__title img {
+        max-width: 70%;
     }
 }
 
