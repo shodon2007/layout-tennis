@@ -429,6 +429,13 @@ header {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
+  .card__title {
+    font-size: 0.8em;
+  }
+  .card__name {
+    font-size: 0.7em;
+    font-weight: 700;
+  }
   .first-screen__video {
     margin-top: 10px;
   }
