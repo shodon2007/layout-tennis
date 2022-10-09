@@ -1,4 +1,19 @@
 @charset "UTF-8";
+/* меняем цвет виделения */
+*::-moz-selection {
+  color: black;
+  background-color: white;
+}
+*::selection {
+  color: black;
+  background-color: white;
+}
+
+/* шрифт */
+body {
+  font-family: gilroy;
+}
+
 /* Скрываем scrollbar для Chrome, Safari и Opera */
 *::-webkit-scrollbar {
   display: none;
@@ -107,10 +122,6 @@ select {
   font-style: normal;
   font-weight: bold;
 }
-body {
-  font-family: gilroy;
-}
-
 .burger {
   opacity: 0;
   z-index: -1;
@@ -420,5 +431,60 @@ header {
   }
   .first-screen__video {
     margin-top: 10px;
+  }
+}
+.plus {
+  width: 1200px;
+  margin: 0 auto;
+  margin: 150px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+
+.plus__block {
+  position: relative;
+}
+
+.plus__img {
+  display: flex;
+  justify-content: center;
+}
+
+.plus__img img {
+  padding: 5px;
+  max-width: 100%;
+  border: 1px solid #F7ECE1;
+}
+
+.plus__text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+.plus__text {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .plus {
+    width: 100vw;
+    padding: 0 10px;
+    padding: 50px;
+  }
+}
+@media (max-width: 660px) {
+  .plus {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 320px) {
+  .plus {
+    padding: 20px;
   }
 }

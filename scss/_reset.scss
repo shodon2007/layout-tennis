@@ -1,3 +1,14 @@
+/* меняем цвет виделения */
+*::selection {
+    color: black;
+    background-color: white;
+}
+
+/* шрифт */
+body {
+    font-family: gilroy;
+}
+
 /* Скрываем scrollbar для Chrome, Safari и Opera */
 *::-webkit-scrollbar {
     display: none;

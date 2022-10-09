@@ -3,6 +3,13 @@ let checkBurger = 0;
 const burger = document.querySelector('.burger');
 
 
+const click = () => {
+    let plusBlock = document.querySelector('.plus__block');
+    let plus = document.querySelector('.plus');
+    plus.style.height = plusBlock.offsetWidth;
+    console.log(plus.offsetWidth);
+}
+
 const showBurger = () => {
     burger.style.display = 'block';
     burger.style.opacity = '1';

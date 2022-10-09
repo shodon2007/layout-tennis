@@ -1,0 +1,77 @@
+//--------------------------------------------------------------
+
+// Стили структуры
+.plus {
+    @include bodyWidth();
+    margin: 150px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.plus__block {
+    position: relative;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.plus__img {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.plus__img img {
+    padding: 5px;
+    max-width: 100%;
+    border: 1px solid #F7ECE1;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.plus__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+// Стили оформления 
+.plus__text {
+    color: white;
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 1200px) {
+    .plus {
+        @include mobileWidth();
+        padding: 50px;
+    }
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 660px) {
+    .plus {
+        grid-template-columns: 1fr;
+    }
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 320px) {
+    .plus {
+        padding: 20px;
+    }
+}
+
+//--------------------------------------------------------------
