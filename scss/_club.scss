@@ -1,0 +1,97 @@
+//--------------------------------------------------------------
+
+// Стили структуры
+.club {
+    @include bodyWidth();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//--------------------------------------------------------------
+
+.club__block *::selection {
+    background-color: #727272;
+    color: black;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.club__block {
+    padding: 60px 60px 60px 120px;
+    width: 60%;
+}
+
+// Стили оформления
+.club__block {
+    color: #333333;
+    background-color: #F7ECE1;
+}
+
+//--------------------------------------------------------------
+
+.club__image {
+    position: relative;
+    left: 70px;
+}
+
+//--------------------------------------------------------------
+
+.club__image img {
+    max-width: 100%;
+}
+
+//--------------------------------------------------------------
+
+.club__title {
+    font-weight: bold;
+    font-size: 2.2em;
+}
+
+//--------------------------------------------------------------
+
+.club__subtitle {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+//--------------------------------------------------------------
+
+.club__list ul {
+    display: grid;
+    row-gap: 10px;
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 1200px) {
+    .club {
+        @include mobileWidth();
+        flex-direction: column;
+    }
+
+    .club__block {
+        width: 100%;
+        padding: 80px 40px 40px 40px;
+    }
+
+    .club__image {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        left: 0;
+        top: 60px;
+    }
+}
+
+@media (max-width: 660px) {
+    .club__block {
+        padding: 40px 10px 10px 10px;
+    }
+
+    .club__image {
+        top: 30px;
+    }
+}

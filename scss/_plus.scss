@@ -23,13 +23,18 @@
 .plus__img {
     display: flex;
     justify-content: center;
-
-
 }
 
+//--------------------------------------------------------------
+
+// Стили структуры
 .plus__img img {
     padding: 5px;
     max-width: 100%;
+}
+
+// Стили оформления
+.plus__img img {
     border: 1px solid #F7ECE1;
 }
 
@@ -47,6 +52,8 @@
 // Стили оформления 
 .plus__text {
     color: white;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 //--------------------------------------------------------------
@@ -71,6 +78,9 @@
 @media (max-width: 320px) {
     .plus {
         padding: 20px;
+    }
+    .plus__text {
+        font-size: 1em;
     }
 }
 
