@@ -622,6 +622,10 @@ header {
   overflow: hidden;
 }
 
+.man__img img {
+  width: 120px;
+}
+
 .trainers__body {
   transition: all 0.4s ease;
   position: relative;
@@ -635,4 +639,15 @@ header {
 
 .trainers__man {
   width: 120px;
+}
+
+@media (max-width: 1200px) {
+  .trainers__bottom {
+    width: 100vw;
+    padding: 0 10px;
+  }
+  .trainers-top {
+    width: 100vw;
+    padding: 0 10px;
+  }
 }
