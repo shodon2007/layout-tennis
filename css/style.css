@@ -541,12 +541,18 @@ header {
 }
 
 .club__title {
-  font-weight: bold;
   font-size: 2.2em;
+}
+
+.club__title {
+  font-weight: bold;
 }
 
 .club__subtitle {
   margin-top: 20px;
+}
+
+.club__subtitle {
   font-weight: bold;
   font-size: 1.3em;
 }
@@ -581,4 +587,52 @@ header {
   .club__image {
     top: 30px;
   }
+}
+.trainers {
+  margin-top: 150px;
+}
+
+.trainers-top {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainers__nav {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.trainers__button {
+  width: 40px;
+  height: 40px;
+  background-color: #8D86C9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.trainers__bottom {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.trainers__body {
+  transition: all 0.4s ease;
+  position: relative;
+  left: 0;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  overflow: visible;
+  display: grid;
+  grid-template-columns: repeat(15000, 1fr);
+}
+
+.trainers__man {
+  width: 120px;
 }

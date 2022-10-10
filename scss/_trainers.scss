@@ -1,0 +1,46 @@
+.trainers {
+    margin-top: 150px;
+}
+
+.trainers-top {
+    @include bodyWidth();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainers__nav {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.trainers__button {
+    width: 40px;
+    height: 40px;
+    background-color: #8D86C9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.trainers__bottom {
+    @include bodyWidth();
+    overflow: hidden;
+}
+
+.trainers__body {
+    transition: all 0.4s ease;
+    position: relative;
+    left: 0;
+    column-gap: 20px;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: repeat(15000, 1fr);
+}
+
+.trainers__man {
+    width: 120px;
+}
