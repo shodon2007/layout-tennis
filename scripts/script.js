@@ -16,7 +16,7 @@ function slideClick(agr) {
     } else if (sliderItem < -(sliderBodyLength - 6)) {
         sliderItem = -(sliderBodyLength - 6);
     }
-    sliderBody.style.left = `${sliderItem * 120}px`;
+    sliderBody.style.left = `${sliderItem * 140}px`;
 }
 
 // Burger

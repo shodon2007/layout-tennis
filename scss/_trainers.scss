@@ -2,7 +2,7 @@
 
 // Стили структуры
 .trainers {
-    margin-top: 150px;
+    margin: 150px 0;
 }
 
 //--------------------------------------------------------------
@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 //--------------------------------------------------------------
@@ -112,6 +113,28 @@
 
     .trainers-top {
         @include mobileWidth();
+    }
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 660px) {
+    .trainers__title {
+        font-size: 1.5em;
+    }
+}
+
+//--------------------------------------------------------------
+
+@media (max-width: 320px) {
+    .trainers__title {
+        font-size: 1.2em;
+    }
+
+    .trainers__button {
+        width: 25px;
+        height: 25px;
+        padding: 0;
     }
 }
 

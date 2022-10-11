@@ -589,7 +589,7 @@ header {
   }
 }
 .trainers {
-  margin-top: 150px;
+  margin: 150px 0;
 }
 
 .trainers-top {
@@ -598,6 +598,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .trainers__nav {
@@ -670,5 +671,20 @@ header {
   .trainers-top {
     width: 100vw;
     padding: 0 10px;
+  }
+}
+@media (max-width: 660px) {
+  .trainers__title {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 320px) {
+  .trainers__title {
+    font-size: 1.2em;
+  }
+  .trainers__button {
+    width: 25px;
+    height: 25px;
+    padding: 0;
   }
 }
