@@ -8,7 +8,6 @@ let checkBurger = 0;
 const burger = document.querySelector('.burger');
 
 
-
 // Slider
 function slideClick(agr) {
     agr == 1 ? sliderItem += 1 : sliderItem -= 1;

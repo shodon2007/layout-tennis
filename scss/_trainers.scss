@@ -1,7 +1,13 @@
+//--------------------------------------------------------------
+
+// Стили структуры
 .trainers {
     margin-top: 150px;
 }
 
+//--------------------------------------------------------------
+
+// Стили структуры
 .trainers-top {
     @include bodyWidth();
     display: flex;
@@ -9,34 +15,59 @@
     align-items: center;
 }
 
+//--------------------------------------------------------------
+
+// Стили структуры
 .trainers__nav {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
 }
 
+//--------------------------------------------------------------
+
+// Стили структуры
 .trainers__button {
     width: 40px;
     height: 40px;
-    background-color: #8D86C9;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
+
 }
 
+// Стили оформления
+.trainers__button {
+    background-color: #8D86C9;
+}
 
+//--------------------------------------------------------------
+
+// Стили структуры
 .trainers__bottom {
     @include bodyWidth();
     overflow: hidden;
 }
 
+//--------------------------------------------------------------
 
+// Стили структуры
 .man__img img {
     width: 120px;
 }
 
+//--------------------------------------------------------------
 
+// Стили оформления
+.trainers__title {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
 .trainers__body {
     transition: all 0.4s ease;
     position: relative;
@@ -47,9 +78,32 @@
     grid-template-columns: repeat(15000, 1fr);
 }
 
+//--------------------------------------------------------------
+
+// Стили структуры
 .trainers__man {
     width: 120px;
 }
+
+//--------------------------------------------------------------
+
+// Стили структуры
+.man__name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+//--------------------------------------------------------------
+
+.man__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+//--------------------------------------------------------------
 
 @media (max-width:1200px) {
     .trainers__bottom {
@@ -60,3 +114,5 @@
         @include mobileWidth();
     }
 }
+
+//--------------------------------------------------------------
