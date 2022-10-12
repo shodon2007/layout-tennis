@@ -10,12 +10,12 @@
 .last-screen__price {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .price__title {
     font-weight: bold;
     font-size: 2.2em;
-    margin-bottom: 50px;
 }
 
 .price__buttons {
