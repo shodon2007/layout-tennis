@@ -1,11 +1,12 @@
 //--------------------------------------------------------------
 
-
 .last-screen {
     @include bodyWidth();
     display: flex;
     justify-content: space-between;
 }
+
+//--------------------------------------------------------------
 
 .last-screen__price {
     display: flex;
@@ -13,16 +14,22 @@
     justify-content: space-between;
 }
 
+//--------------------------------------------------------------
+
 .price__title {
     font-weight: bold;
     font-size: 2.2em;
 }
+
+//--------------------------------------------------------------
 
 .price__buttons {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+
+//--------------------------------------------------------------
 
 .price__button {
     margin: 15px 0;
@@ -34,6 +41,8 @@
     padding: 15px 30px;
 }
 
+//--------------------------------------------------------------
+
 .price__button:last-child {
     margin-bottom: 0;
 }
@@ -42,10 +51,14 @@
     margin-top: 0;
 }
 
+//--------------------------------------------------------------
+
 .last-screen__services {
     flex-grow: 1;
     margin-left: 130px;
 }
+
+//--------------------------------------------------------------
 
 .services__top {
     display: flex;
@@ -54,10 +67,14 @@
     margin-bottom: 50px;
 }
 
+//--------------------------------------------------------------
+
 .services__title {
     font-size: 2.2em;
     font-weight: bold;
 }
+
+//--------------------------------------------------------------
 
 .services__bottom {
     flex-grow: 1;
@@ -66,9 +83,13 @@
     flex-direction: column;
 }
 
+//--------------------------------------------------------------
+
 .services__body {
     position: relative;
 }
+
+//--------------------------------------------------------------
 
 .services__img {
     display: flex;
@@ -76,9 +97,13 @@
     justify-content: center;
 }
 
+//--------------------------------------------------------------
+
 .services__img img {
     width: 100%;
 }
+
+//--------------------------------------------------------------
 
 .services__name {
     color: white;
@@ -89,24 +114,29 @@
     bottom: 0;
 }
 
+//--------------------------------------------------------------
 
 @media (max-width: 1200px) {
     .last-screen {
         @include mobileWidth();
         flex-direction: column;
     }
+
     .last-screen__services {
         margin: 0;
         margin-top: 100px;
     }
 
     .services__top {
-        margin-bottom:  10px;
+        margin-bottom: 10px;
     }
+
     .price__title {
         margin-bottom: 10px;
     }
 }
+
+//--------------------------------------------------------------
 
 @media (max-width: 320px) {
     .services__name {
@@ -118,10 +148,14 @@
         padding: 10px 20px;
         font-size: 14px;
     }
+
     .price__title {
         font-size: 26px;
     }
+
     .services__title {
         font-size: 26px;
     }
 }
+
+//--------------------------------------------------------------
