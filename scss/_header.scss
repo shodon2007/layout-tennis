@@ -90,13 +90,7 @@ header {
 .header__social img {
     max-width: 100%;
     margin: 0 5px;
-}
-
-// Стили оформления
-.header__social img {
-    &:hover {
-        cursor: pointer;
-    }
+    cursor: pointer;
 }
 
 //--------------------------------------------------------------

@@ -268,9 +268,6 @@ header {
 .header__social img {
   max-width: 100%;
   margin: 0 5px;
-}
-
-.header__social img:hover {
   cursor: pointer;
 }
 
@@ -587,6 +584,9 @@ header {
   .club__image {
     top: 30px;
   }
+  .club__title {
+    font-size: 1.5em;
+  }
 }
 .trainers {
   margin: 150px 0;
@@ -648,6 +648,7 @@ header {
 
 .trainers__man {
   width: 120px;
+  cursor: pointer;
 }
 
 .man__name {
@@ -693,6 +694,7 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 150px;
 }
 
 .last-screen__price {
@@ -713,6 +715,7 @@ header {
 }
 
 .price__button {
+  cursor: pointer;
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
@@ -808,5 +811,85 @@ header {
   }
   .services__title {
     font-size: 26px;
+  }
+}
+.footer {
+  background-color: #F7ECE1;
+}
+
+.footer__body {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 0;
+}
+
+.footer__nav a {
+  margin: 0 10px;
+}
+
+.footer__nav a {
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social img {
+  max-width: 100%;
+  margin: 0 5px;
+}
+
+.footer__social img {
+  cursor: pointer;
+}
+
+.footer__autor {
+  text-align: center;
+}
+
+.footer__autor {
+  font-size: 14px;
+  color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .footer__body {
+    width: 100vw;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+  .footer__social {
+    order: 2;
+    margin: 10px 0;
+  }
+  .footer__nav {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    order: 1;
+  }
+  .footer__autor {
+    order: 3;
+  }
+}
+@media (max-width: 660px) {
+  .footer__nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 320px) {
+  .footer__nav {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

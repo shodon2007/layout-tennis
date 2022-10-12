@@ -4,6 +4,7 @@
     @include bodyWidth();
     display: flex;
     justify-content: space-between;
+    margin-bottom: 150px;
 }
 
 //--------------------------------------------------------------
@@ -32,6 +33,7 @@
 //--------------------------------------------------------------
 
 .price__button {
+    cursor: pointer;
     margin: 15px 0;
     display: flex;
     justify-content: space-between;
