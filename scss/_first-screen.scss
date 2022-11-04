@@ -44,6 +44,13 @@
 //--------------------------------------------------------------
 
 // Стили структуры
+.video__img img {
+    cursor: pointer;
+}
+
+//--------------------------------------------------------------
+
+// Стили структуры
 .video__text {
     margin-left: 30px;
 }
@@ -82,10 +89,10 @@
     background-color: #8D86C9;
     color: white;
     font-weight: 700;
-    @include hoverColor(0.4s, black);
+    @include hoverColor(0.4s, #ff9123);
 
     &:hover {
-        background-color: #716ba1;
+        box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
     }
 }
 

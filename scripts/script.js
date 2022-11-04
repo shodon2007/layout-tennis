@@ -1,25 +1,32 @@
-// Slider
-let sliderItem = 0;
-sliderBody = document.querySelector('.trainers__body');
-sliderBodyLength = sliderBody.children.length;
-// Burger
+new Swiper('.swiper', {
+    slidesPerView: 2,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 3,
+        },
+        460: {
+            slidesPerView: 4,
+        },
+        660: {
+            slidesPerView: 5,
+        },
+        1200: {
+            slidesPerView: 6,
+        }
+    },
+
+    navigation: {
+        nextEl: '.trainers__right',
+        prevEl: '.trainers__left',
+    }
+})
+
+
 let isBurger = false;
 let checkBurger = 0;
 const burger = document.querySelector('.burger');
 
-
-// Slider
-function slideClick(agr) {
-    agr == 1 ? sliderItem += 1 : sliderItem -= 1;
-    if (sliderItem > -1) {
-        sliderItem = 0;
-    } else if (sliderItem < -(sliderBodyLength - 6)) {
-        sliderItem = -(sliderBodyLength - 6);
-    }
-    sliderBody.style.left = `${sliderItem * 140}px`;
-}
-
-// Burger
 const showBurger = () => {
     burger.style.display = 'block';
     burger.style.opacity = '1';
