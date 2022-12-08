@@ -664,16 +664,48 @@ header {
 .club__block {
   padding: 60px 60px 60px 120px;
   width: 60%;
+  -webkit-transform: translate(100px, 0);
+  -ms-transform: translate(100px, 0);
+  transform: translate(100px, 0);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .club__block {
+  opacity: 0;
   color: #333333;
   background-color: #F7ECE1;
 }
 
+.club__block.active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
 .club__image {
+  z-index: 3;
+  -webkit-transform: translate(-100px, 0);
+  -ms-transform: translate(-100px, 0);
+  transform: translate(-100px, 0);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
   position: relative;
   left: 70px;
+}
+
+.club__image {
+  opacity: 0;
+}
+
+.club__image.active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .club__image img {

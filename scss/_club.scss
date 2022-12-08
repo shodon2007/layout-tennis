@@ -21,20 +21,43 @@
 .club__block {
     padding: 60px 60px 60px 120px;
     width: 60%;
+    transform: translate(100px, 0);
+    transition: all 1s ease;
 }
 
 // Стили оформления
 .club__block {
+    opacity: 0;
     color: #333333;
     background-color: #F7ECE1;
+}
+
+// Стили при скролле 
+.club__block.active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 //--------------------------------------------------------------
 
 // Стили структуры
 .club__image {
+    z-index: 3;
+    transform: translate(-100px, 0);
+    transition: all 1s ease;
     position: relative;
     left: 70px;
+}
+
+//Стили оформления
+.club__image {
+    opacity: 0;
+}
+
+// Стили при скролле
+.club__image.active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 //--------------------------------------------------------------
