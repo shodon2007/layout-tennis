@@ -14,6 +14,9 @@ module.exports = {
     devServer: {
         port: 2007,
     },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
@@ -22,18 +25,18 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name][contenthash].css'
         }),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: path.resolve(__dirname, 'src/images'),
-                    to: path.resolve(__dirname, 'dist/images')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/fonts'),
-                    to: path.resolve(__dirname, 'dist/fonts'),
-                }
-            ]
-        })
+        //     new CopyWebpackPlugin({
+        //         patterns: [
+        //             {
+        //                 from: path.resolve(__dirname, 'src/images'),
+        //                 to: path.resolve(__dirname, 'dist/images')
+        //             },
+        //             {
+        //                 from: path.resolve(__dirname, 'src/fonts'),
+        //                 to: path.resolve(__dirname, 'dist/fonts'),
+        //             }
+        //         ]
+        //     })
     ],
     module: {
         rules: [
@@ -43,12 +46,12 @@ module.exports = {
             },
             {
 
-                test: /\.m?js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: ['@babel/preset-env']
+                        presets: ['@babel/preset-env', '@babel/preset-react']
                     }
                 }
             }
