@@ -15,7 +15,10 @@ module.exports = {
         port: 2007,
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
+        alias: {
+            '@': path.resolve(__dirname, 'src'),
+        }
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -25,23 +28,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name][contenthash].css'
         }),
-        //     new CopyWebpackPlugin({
-        //         patterns: [
-        //             {
-        //                 from: path.resolve(__dirname, 'src/images'),
-        //                 to: path.resolve(__dirname, 'dist/images')
-        //             },
-        //             {
-        //                 from: path.resolve(__dirname, 'src/fonts'),
-        //                 to: path.resolve(__dirname, 'dist/fonts'),
-        //             }
-        //         ]
-        //     })
     ],
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.(scss|css)$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
@@ -54,6 +45,10 @@ module.exports = {
                         presets: ['@babel/preset-env', '@babel/preset-react']
                     }
                 }
+            },
+            {
+                test: /\.png$/,
+                use: ['file-loader']
             }
         ]
     }

@@ -1,6 +1,25 @@
-/*!**********************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./resetAll.scss ***!
-  \**********************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/header/Header.module.css ***!
+  \********************************************************************************************************************************/
+.zyWer9TJpuGVQSzppWAa {
+  width: 100%;
+  background-color: yellow;
+  padding: 20px 0; }
+
+.R1V6LOEpWQX8oa97Lth_ {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.zyWer9TJpuGVQSzppWAa {
+  max-width: 100%; }
+
+/*!********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./global.scss ***!
+  \********************************************************************************************************/
 @charset "UTF-8";
 /* меняем цвет выделения */
 *::selection {
