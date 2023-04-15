@@ -10,7 +10,7 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.body}>
                 <img src={logoImg} alt="logo" className={styles.title} />
-                <nav className="nav">
+                <nav className={styles.nav}>
                     <a href="#">Главная</a>
                     <a href="#">О клубе</a>
                     <a href="#">Турниры</a>
@@ -21,7 +21,7 @@ const Header = () => {
                     <a href="#">Контакты</a>
                 </nav>
                 <div className="buttons">
-                    <div className="social">
+                    <div className={styles.social}>
                         <img src={vkWhiteImg} alt="vk" />
                         <img src={youtubeWhiteImg} alt="youtube" />
                     </div>
