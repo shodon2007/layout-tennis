@@ -29,7 +29,13 @@ header {
     color: black;
 }
 
-.social {
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons .social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,4 +45,27 @@ header {
     max-width: 100%;
     margin: 0 5px;
     cursor: pointer;
+}
+
+.burgerButton {
+    display: none;
+    max-width: 30px;
+}
+
+
+@media (max-width: 1200px) {
+    .body {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .burgerButton {
+        display: flex;
+    }
+
+    .buttons .social {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
 }

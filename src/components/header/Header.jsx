@@ -4,6 +4,7 @@ import styles from './Header.module.css';
 import logoImg from '@/images/logo.png';
 import vkWhiteImg from '@/images/vk_white.png';
 import youtubeWhiteImg from '@/images/youtube_white.png';
+import burgerButtonImg from '@/images/burger.png';
 
 const Header = () => {
     return (
@@ -20,10 +21,13 @@ const Header = () => {
                     <a href="#">Цены</a>
                     <a href="#">Контакты</a>
                 </nav>
-                <div className="buttons">
+                <div className={styles.buttons}>
                     <div className={styles.social}>
                         <img src={vkWhiteImg} alt="vk" />
                         <img src={youtubeWhiteImg} alt="youtube" />
+                    </div>
+                    <div className={styles.burgerButton}>
+                        <img src={burgerButtonImg} alt="burgerButton" />
                     </div>
                 </div>
             </div>

@@ -1,0 +1,179 @@
+/*!********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/header/Header.module.css ***!
+  \********************************************************************************************************************************/
+header {
+  padding: 20px 0;
+  border-bottom: 2px solid white; }
+
+.R1V6LOEpWQX8oa97Lth_ {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.Vw5ojQcVG7QQCrLUyY6o {
+  max-width: 100%;
+  cursor: pointer; }
+
+.RkQOh9xzOe7pOkbDXQjh a {
+  margin: 0 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.4s ease; }
+
+.RkQOh9xzOe7pOkbDXQjh a:hover {
+  color: black; }
+
+.C_4armI6pqFVku99slSz {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.C_4armI6pqFVku99slSz .sO1GiNuCeEH28wQWSGZq {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sO1GiNuCeEH28wQWSGZq img {
+  max-width: 100%;
+  margin: 0 5px;
+  cursor: pointer; }
+
+.Zi3FTkUJf5a8ptX5MRB7 {
+  display: none;
+  max-width: 30px; }
+
+@media (max-width: 1200px) {
+  .R1V6LOEpWQX8oa97Lth_ {
+    width: 100%;
+    padding: 0 10px; }
+  .Zi3FTkUJf5a8ptX5MRB7 {
+    display: flex; }
+  .C_4armI6pqFVku99slSz .sO1GiNuCeEH28wQWSGZq {
+    display: none; }
+  .RkQOh9xzOe7pOkbDXQjh {
+    display: none; } }
+
+/*!*******************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./fonts.scss ***!
+  \*******************************************************************************************************/
+@font-face {
+  font-family: "gilroy";
+  src: url(b84941b7bdcce7cbba6d.eot);
+  src: url(b84941b7bdcce7cbba6d.eot?#iefix) format("embedded-opentype"), url(2bc7f5d7ea77ee1bddb3.woff) format("woff"), url(f9f832b0ed3f1ab138c9.ttf) format("truetype"), url(d1104e8a7ea9e65e8c5e.svg#giroy) format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "gilroy";
+  src: url(a732fed1bc6140852a0b.eot);
+  src: url(a732fed1bc6140852a0b.eot?#iefix) format("embedded-opentype"), url(5fb38b9fa452b5814397.woff) format("woff"), url(b900325e44ec0c673e88.ttf) format("truetype"), url(0810cdfc34b07410eecf.svg#giroy) format("svg");
+  font-style: normal;
+  font-weight: bold; }
+
+/*!********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./global.scss ***!
+  \********************************************************************************************************/
+@charset "UTF-8";
+/* меняем цвет выделения */
+*::selection {
+  color: black;
+  background-color: white; }
+
+/* шрифт */
+body {
+  font-family: gilroy; }
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+*::-webkit-scrollbar {
+  display: none; }
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE и Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+/*!***********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./App.module.css ***!
+  \***********************************************************************************************************/
+.ngaFODgpdAhiyoSoMzEs {
+  background: url(b9e4f7aac9f5d3c6194d.png) center top/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh; }
+
