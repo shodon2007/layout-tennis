@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './FirstScreen.module.css';
-import Header from '../header/Header';
+import Header from './header/Header';
 import Main from './main/Main.jsx';
 import Footer from './footer/Footer.jsx';
 

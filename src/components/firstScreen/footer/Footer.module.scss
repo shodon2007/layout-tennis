@@ -1,0 +1,26 @@
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.card {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #8D86C9;
+    color: white;
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    color: black;
+}

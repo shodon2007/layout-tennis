@@ -1,8 +1,27 @@
 import React from 'react'
+import goImg from '@/images/go.png';
+import styles from './Footer.module.scss';
 
 function Footer() {
+  function createCard(name) {
+    return (
+      <div className={styles.card}>
+        <div>
+          <div>Услуги</div>
+          <div>{name}</div>
+        </div>
+        <img src={goImg} alt="go" />
+      </div>
+    )
+  };
+
   return (
-    <div>Footer</div>
+    <div className={styles.main}>
+      {createCard('Аренда карта')}
+      {createCard('Детский теннис')}
+      {createCard('Сборы команд')}
+      {createCard('Расписание')}
+    </div>
   )
 }
 
