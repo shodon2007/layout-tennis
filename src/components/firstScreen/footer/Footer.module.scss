@@ -4,8 +4,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
+    gap: 10px;
 }
 
 .card {
@@ -21,6 +20,52 @@
     transition: all 0.4s ease;
 }
 
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .card:hover {
     color: black;
+}
+
+.card img {
+    max-width: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    .main {
+        width: 100%;
+        padding: 0 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        gap: 5px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+    .card {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 525px) {
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 }

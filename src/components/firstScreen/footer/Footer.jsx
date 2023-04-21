@@ -7,8 +7,8 @@ function Footer() {
     return (
       <div className={styles.card}>
         <div>
-          <div>Услуги</div>
-          <div>{name}</div>
+          <div className={styles.subtitle}>Услуги</div>
+          <div className={styles.title}>{name}</div>
         </div>
         <img src={goImg} alt="go" />
       </div>

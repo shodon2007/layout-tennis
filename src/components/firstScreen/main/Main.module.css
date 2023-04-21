@@ -34,9 +34,27 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .title {
         font-size: 1.5em;
+    }
+
+    .video {
+        margin-top: 20px;
+    }
+
+    .video img {
+        width: 60px;
+    }
+
+    .video div {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 1em;
     }
 
     .video {
