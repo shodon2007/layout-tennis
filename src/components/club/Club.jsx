@@ -1,12 +1,13 @@
 import React from 'react'
 
 import img from '@/images/restangle.png';
+import styles from './Club.module.scss';
 
 function Club() {
   return (
-    <div>
-        <img src={img} alt="img man playing" />
-        <div>
+    <div className={styles.club}>
+        <img className={styles.image} src={img} alt="img man playing" />
+        <div className={styles.block}>
             <div>Спортивный клуб</div>
             <div>
                 <p>Imperdiet lorem ipsum, pulvinar aliquet sit ultricies in sit turpis. Ultricies erat pretium risus 
