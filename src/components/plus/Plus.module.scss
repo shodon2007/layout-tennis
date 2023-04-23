@@ -1,0 +1,31 @@
+.plus {
+    width: 1200px;
+    margin: 150px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.block {
+    position: relative;
+}
+
+.img {    
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    max-width: 100%;
+    border: 1px solid #F7ECE1;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+}

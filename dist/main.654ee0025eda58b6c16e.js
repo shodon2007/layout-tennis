@@ -16,7 +16,7 @@
   \*****************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fonts_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fonts.scss */ \"./fonts.scss\");\n/* harmony import */ var _global_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./global.scss */ \"./global.scss\");\n/* harmony import */ var _components_firstScreen_FirstScreen__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/firstScreen/FirstScreen */ \"./components/firstScreen/FirstScreen.jsx\");\n\n\n\n\nvar App = function App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_firstScreen_FirstScreen__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack:///./App.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fonts_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fonts.scss */ \"./fonts.scss\");\n/* harmony import */ var _global_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./global.scss */ \"./global.scss\");\n/* harmony import */ var _components_firstScreen_FirstScreen__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/firstScreen/FirstScreen */ \"./components/firstScreen/FirstScreen.jsx\");\n/* harmony import */ var _components_plus_Plus__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/plus/Plus */ \"./components/plus/Plus.jsx\");\n\n\n\n\n\nvar App = function App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_firstScreen_FirstScreen__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_plus_Plus__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack:///./App.jsx?");
 
 /***/ }),
 
@@ -57,6 +57,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_play_button_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/images/play__button.png */ \"./images/play__button.png\");\n/* harmony import */ var _Main_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main.module.css */ \"./components/firstScreen/main/Main.module.css\");\n\n\n\nfunction Main() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: _Main_module_css__WEBPACK_IMPORTED_MODULE_2__[\"default\"].main\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: _Main_module_css__WEBPACK_IMPORTED_MODULE_2__[\"default\"].title\n  }, \"\\u041F\\u0435\\u0442\\u0435\\u0440\\u0431\\u0443\\u0440\\u0433\\u0441\\u043A\\u0438\\u0439 \", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"br\", null), \"\\u0442\\u0435\\u043D\\u043D\\u0438\\u0441\\u043D\\u044B\\u0439 \\u043A\\u043B\\u0443\\u0431 \", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"br\", null), \"\\u0438\\u043C\\u0435\\u043D\\u0438 \\u041C.\\u0410. \\u041F\\u0430\\u0441\\u0435\\u0447\\u043D\\u0438\\u043A\\u043E\\u0432\\u0430\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: _Main_module_css__WEBPACK_IMPORTED_MODULE_2__[\"default\"].video\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    src: _images_play_button_png__WEBPACK_IMPORTED_MODULE_1__,\n    alt: \"play\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, \"\\u041F\\u043E\\u0441\\u043C\\u043E\\u0442\\u0440\\u0438\\u0442\\u0435 \\u0432\\u0438\\u0434\\u0435\\u043E \", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"br\", null), \" \\u043E \\u043D\\u0430\\u0448\\u0435\\u043C \\u043A\\u043B\\u0443\\u0431\\u0435\")));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main);\n\n//# sourceURL=webpack:///./components/firstScreen/main/Main.jsx?");
+
+/***/ }),
+
+/***/ "./components/plus/Plus.jsx":
+/*!**********************************!*\
+  !*** ./components/plus/Plus.jsx ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _PlusBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PlusBlock */ \"./components/plus/PlusBlock.jsx\");\n/* harmony import */ var _Plus_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Plus.module.scss */ \"./components/plus/Plus.module.scss\");\n/* harmony import */ var _images_second_1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/images/second_1.png */ \"./images/second_1.png\");\n/* harmony import */ var _images_second_2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/images/second_2.png */ \"./images/second_2.png\");\n/* harmony import */ var _images_second_3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/images/second_3.png */ \"./images/second_3.png\");\n\n\n\n\n\n\nfunction Plus() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: _Plus_module_scss__WEBPACK_IMPORTED_MODULE_2__[\"default\"].plus\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_PlusBlock__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n    img: _images_second_1_png__WEBPACK_IMPORTED_MODULE_3__,\n    title: \"5 летних грунтовых кортов\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_PlusBlock__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n    img: _images_second_2_png__WEBPACK_IMPORTED_MODULE_4__,\n    title: \"5 летних грунтовых кортов\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_PlusBlock__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n    img: _images_second_3_png__WEBPACK_IMPORTED_MODULE_5__,\n    title: \"5 летних грунтовых кортов\"\n  }));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Plus);\n\n//# sourceURL=webpack:///./components/plus/Plus.jsx?");
+
+/***/ }),
+
+/***/ "./components/plus/PlusBlock.jsx":
+/*!***************************************!*\
+  !*** ./components/plus/PlusBlock.jsx ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Plus_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Plus.module.scss */ \"./components/plus/Plus.module.scss\");\n\n\nfunction PlusBlock(_ref) {\n  var img = _ref.img,\n    title = _ref.title;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: _Plus_module_scss__WEBPACK_IMPORTED_MODULE_1__[\"default\"].block\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    className: _Plus_module_scss__WEBPACK_IMPORTED_MODULE_1__[\"default\"].img,\n    src: img,\n    alt: \"bgImage\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: _Plus_module_scss__WEBPACK_IMPORTED_MODULE_1__[\"default\"].text\n  }, title));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PlusBlock);\n\n//# sourceURL=webpack:///./components/plus/PlusBlock.jsx?");
 
 /***/ }),
 
@@ -107,6 +127,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"main\":\"tjHzOEl5UfGBa8ufGdjE\",\"title\":\"XYSEXahtjlpU0fgKlKxj\",\"video\":\"qlyTfqxAjDN2o3z9uMCA\"});\n\n//# sourceURL=webpack:///./components/firstScreen/main/Main.module.css?");
+
+/***/ }),
+
+/***/ "./components/plus/Plus.module.scss":
+/*!******************************************!*\
+  !*** ./components/plus/Plus.module.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"plus\":\"wj8jjToyMC4atCFr6Jo2\",\"block\":\"j9pqumNokLbo3a_noXQR\",\"img\":\"z04SHUVL8C8nCEhT9OYm\",\"text\":\"P2YL1fLhPIru14CrsWcl\"});\n\n//# sourceURL=webpack:///./components/plus/Plus.module.scss?");
 
 /***/ }),
 
@@ -237,6 +267,36 @@ eval("module.exports = __webpack_require__.p + \"28ced308f484c6fddd57.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"9008feee025b0ef83cc8.png\";\n\n//# sourceURL=webpack:///./images/play__button.png?");
+
+/***/ }),
+
+/***/ "./images/second_1.png":
+/*!*****************************!*\
+  !*** ./images/second_1.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ed8429a7990fc5729e23.png\";\n\n//# sourceURL=webpack:///./images/second_1.png?");
+
+/***/ }),
+
+/***/ "./images/second_2.png":
+/*!*****************************!*\
+  !*** ./images/second_2.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"880a09d561efc55e0f7e.png\";\n\n//# sourceURL=webpack:///./images/second_2.png?");
+
+/***/ }),
+
+/***/ "./images/second_3.png":
+/*!*****************************!*\
+  !*** ./images/second_3.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"bc677f6f052e1eebec43.png\";\n\n//# sourceURL=webpack:///./images/second_3.png?");
 
 /***/ }),
 
