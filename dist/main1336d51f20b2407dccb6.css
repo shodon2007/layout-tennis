@@ -365,3 +365,26 @@ header {
   font-size: 1.3em;
   font-weight: bold; }
 
+@media (max-width: 1200px) {
+  .pSlKiO8ShNsIgh3jc3H0 {
+    width: 100%;
+    padding: 0 10px;
+    flex-direction: column; }
+  .SFrxl72Oxw8ZB4pukKVX {
+    width: 100%;
+    padding: 80px 40px 40px 40px; }
+  .UVInCn2qSuQljz4NEUN3 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    left: 0;
+    top: 60px; } }
+
+@media (max-width: 768px) {
+  .SFrxl72Oxw8ZB4pukKVX {
+    padding: 40px 10px 10px 10px; }
+  .UVInCn2qSuQljz4NEUN3 {
+    top: 30px; }
+  .jue2M9rLL1T9x2gGdUKJ {
+    font-size: 1.5em; } }
+
