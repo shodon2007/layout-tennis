@@ -8,7 +8,7 @@ function Club() {
     <div className={styles.club}>
         <img className={styles.image} src={img} alt="img man playing" />
         <div className={styles.block}>
-            <div>Спортивный клуб</div>
+            <div className={styles.title}>Спортивный клуб</div>
             <div>
                 <p>Imperdiet lorem ipsum, pulvinar aliquet sit ultricies in sit turpis. Ultricies erat pretium risus 
                 quam tincidunt non viverra porttitor. Sollicitudin enim nunc in nisi donec vel. Blandit mauris vitae amet 
@@ -17,7 +17,7 @@ function Club() {
                 
                 <p>Condimentum hac adipiscing purus in augue nisi. Convallis ut nisi.</p>
             </div>
-            <div>Ornare orci ut dictum nulla fames.</div>
+            <div className={styles.subtitle}>Ornare orci ut dictum nulla fames.</div>
             <div>
                 <ul>
                     <li>Euismod diam, vel venenatis bibendum sodales sem hendrerit vulputate sagittis.</li>

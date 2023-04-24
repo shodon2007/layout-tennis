@@ -1,0 +1,367 @@
+/*!*******************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./fonts.scss ***!
+  \*******************************************************************************************************/
+@font-face {
+  font-family: "gilroy";
+  src: url(b84941b7bdcce7cbba6d.eot);
+  src: url(b84941b7bdcce7cbba6d.eot?#iefix) format("embedded-opentype"), url(2bc7f5d7ea77ee1bddb3.woff) format("woff"), url(f9f832b0ed3f1ab138c9.ttf) format("truetype"), url(d1104e8a7ea9e65e8c5e.svg#giroy) format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "gilroy";
+  src: url(a732fed1bc6140852a0b.eot);
+  src: url(a732fed1bc6140852a0b.eot?#iefix) format("embedded-opentype"), url(5fb38b9fa452b5814397.woff) format("woff"), url(b900325e44ec0c673e88.ttf) format("truetype"), url(0810cdfc34b07410eecf.svg#giroy) format("svg");
+  font-style: normal;
+  font-weight: bold; }
+
+/*!********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./global.scss ***!
+  \********************************************************************************************************/
+@charset "UTF-8";
+/* меняем цвет выделения */
+*::selection {
+  color: black;
+  background-color: white; }
+
+/* шрифт */
+body {
+  font-family: gilroy; }
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+*::-webkit-scrollbar {
+  display: none; }
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE и Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+/*!******************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/firstScreen/FirstScreen.module.css ***!
+  \******************************************************************************************************************************************/
+.dslLKmNQfMQO7fo7cSXw {
+  background: url(b9e4f7aac9f5d3c6194d.png) center top/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh; }
+
+/*!********************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/firstScreen/header/Header.module.css ***!
+  \********************************************************************************************************************************************/
+header {
+  padding: 20px 0;
+  border-bottom: 2px solid white; }
+
+.zwe3UE5C3kgdJUqKLEVH {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.s6WZ3QvaOPPsKSNZbza2 {
+  max-width: 100%;
+  cursor: pointer; }
+
+.VJUhfv5nx0mAv_4QVkRl a {
+  margin: 0 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.4s ease; }
+
+.VJUhfv5nx0mAv_4QVkRl a:hover {
+  color: black; }
+
+.FaPuCwwj5b2t4OidQ2uu {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.FaPuCwwj5b2t4OidQ2uu .BGH3uyXg8_atELWAvkBJ {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.BGH3uyXg8_atELWAvkBJ img {
+  max-width: 100%;
+  margin: 0 5px;
+  cursor: pointer; }
+
+.HkVnVEYMbYKqWt6qsSLT {
+  display: none;
+  max-width: 30px; }
+
+@media (max-width: 1200px) {
+  .zwe3UE5C3kgdJUqKLEVH {
+    width: 100%;
+    padding: 0 10px; }
+  .HkVnVEYMbYKqWt6qsSLT {
+    display: flex; }
+  .FaPuCwwj5b2t4OidQ2uu .BGH3uyXg8_atELWAvkBJ {
+    display: none; }
+  .VJUhfv5nx0mAv_4QVkRl {
+    display: none; } }
+
+/*!****************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/firstScreen/main/Main.module.css ***!
+  \****************************************************************************************************************************************/
+.tjHzOEl5UfGBa8ufGdjE {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word; }
+
+.XYSEXahtjlpU0fgKlKxj {
+  color: white;
+  font-size: 2.5em; }
+
+.qlyTfqxAjDN2o3z9uMCA {
+  margin-top: 40px;
+  display: flex;
+  align-items: center; }
+
+.qlyTfqxAjDN2o3z9uMCA img {
+  cursor: pointer; }
+
+.qlyTfqxAjDN2o3z9uMCA div {
+  margin-left: 30px;
+  color: white;
+  font-size: 1em; }
+
+@media (max-width: 1200px) {
+  .tjHzOEl5UfGBa8ufGdjE {
+    width: 100%;
+    padding: 0 10px; } }
+
+@media (max-width: 768px) {
+  .XYSEXahtjlpU0fgKlKxj {
+    font-size: 1.5em; }
+  .qlyTfqxAjDN2o3z9uMCA {
+    margin-top: 20px; }
+  .qlyTfqxAjDN2o3z9uMCA img {
+    width: 60px; }
+  .qlyTfqxAjDN2o3z9uMCA div {
+    margin-left: 15px; } }
+
+@media (max-width: 320px) {
+  .XYSEXahtjlpU0fgKlKxj {
+    font-size: 1em; }
+  .qlyTfqxAjDN2o3z9uMCA {
+    margin-top: 20px; }
+  .qlyTfqxAjDN2o3z9uMCA div {
+    margin-left: 10px;
+    font-size: 0.9em; } }
+
+/*!*********************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/firstScreen/footer/Footer.module.scss ***!
+  \*********************************************************************************************************************************************/
+.SfxWZKI_GX8n3sZRiICZ {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px; }
+
+.CGo0NP_jE3GEQWbqtHN0 {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #8D86C9;
+  color: white;
+  font-weight: 700;
+  transition: all 0.4s ease; }
+
+.YkfJblBmVOiyplClupcD {
+  font-size: 18px;
+  font-weight: 400; }
+
+.yxhsRfyRv_KgoVeqH6_T {
+  font-size: 24px;
+  font-weight: 700; }
+
+.CGo0NP_jE3GEQWbqtHN0:hover {
+  color: black; }
+
+.CGo0NP_jE3GEQWbqtHN0 img {
+  max-width: 20px; }
+
+@media (max-width: 1200px) {
+  .SfxWZKI_GX8n3sZRiICZ {
+    width: 100%;
+    padding: 0 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); } }
+
+@media (max-width: 768px) {
+  .SfxWZKI_GX8n3sZRiICZ {
+    gap: 5px; }
+  .yxhsRfyRv_KgoVeqH6_T {
+    font-size: 16px; }
+  .YkfJblBmVOiyplClupcD {
+    font-size: 14px; }
+  .CGo0NP_jE3GEQWbqtHN0 {
+    padding: 10px 20px; } }
+
+@media (max-width: 525px) {
+  .SfxWZKI_GX8n3sZRiICZ {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); } }
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/plus/Plus.module.scss ***!
+  \*****************************************************************************************************************************/
+.wj8jjToyMC4atCFr6Jo2 {
+  width: 1200px;
+  margin: 150px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; }
+
+.j9pqumNokLbo3a_noXQR {
+  position: relative; }
+
+.z04SHUVL8C8nCEhT9OYm {
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 100%;
+  border: 1px solid #F7ECE1; }
+
+.P2YL1fLhPIru14CrsWcl {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold; }
+
+@media (max-width: 1200px) {
+  .wj8jjToyMC4atCFr6Jo2 {
+    width: 100%;
+    padding: 50px; } }
+
+@media (max-width: 768px) {
+  .wj8jjToyMC4atCFr6Jo2 {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media (max-width: 320px) {
+  .wj8jjToyMC4atCFr6Jo2 {
+    padding: 20px; }
+  .P2YL1fLhPIru14CrsWcl {
+    font-size: 1em; } }
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/club/Club.module.scss ***!
+  \*****************************************************************************************************************************/
+.pSlKiO8ShNsIgh3jc3H0 {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.SFrxl72Oxw8ZB4pukKVX {
+  padding: 60px 60px 60px 120px;
+  width: 60%;
+  transform: translate(0, 0);
+  transition: all 1s ease;
+  color: #333333;
+  background-color: #F7ECE1; }
+
+.UVInCn2qSuQljz4NEUN3 {
+  z-index: 3;
+  transform: translate(0, 0);
+  transition: all 1s ease;
+  position: relative;
+  left: 70px; }
+
+.jue2M9rLL1T9x2gGdUKJ {
+  font-size: 2.2em;
+  font-weight: bold; }
+
+.hee9VUoL11dXfbRGLpAt {
+  margin-top: 20px;
+  font-size: 1.3em;
+  font-weight: bold; }
+
