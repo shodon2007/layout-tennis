@@ -388,3 +388,38 @@ header {
   .jue2M9rLL1T9x2gGdUKJ {
     font-size: 1.5em; } }
 
+/*!*********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/burger/Burger.module.scss ***!
+  \*********************************************************************************************************************************/
+.GTkNAKm0MPvLLIN9vUAL {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between; }
+
+.wiotzecX8pFkmOtfIlYp {
+  padding: 10px;
+  background-color: #8a8a8a;
+  max-width: 100%;
+  max-height: 100%;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.xzDCGIDpEqwiVDEMJNO2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.RT3KEIMXm47NhzsnHETy {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%); }
+
+.J_l3WrT0q61Jt8daJZHT {
+  flex: 1 1 auto;
+  backdrop-filter: blur(4px); }
+

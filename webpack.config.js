@@ -1,8 +1,11 @@
 const path = require('path');
+const dotenv = require('dotenv');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+dotenv.config();
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -12,7 +15,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
     },
     devServer: {
-        port: 2007,
+        port: process.env.PORT,
     },
     resolve: {
         extensions: ['.js', '.jsx'],
