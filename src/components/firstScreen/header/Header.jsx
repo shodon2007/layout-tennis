@@ -6,7 +6,7 @@ import vkWhiteImg from '@/images/vk_white.png';
 import youtubeWhiteImg from '@/images/youtube_white.png';
 import burgerButtonImg from '@/images/burger.png';
 
-const Header = () => {
+const Header = ({setActiveBurger}) => {
     return (
         <header className={styles.header}>
             <div className={styles.body}>
@@ -27,7 +27,7 @@ const Header = () => {
                         <img src={youtubeWhiteImg} alt="youtube" />
                     </div>
                     <div className={styles.burgerButton}>
-                        <img src={burgerButtonImg} alt="burgerButton" />
+                        <img src={burgerButtonImg} alt="burgerButton" onClick={() => setActiveBurger(true)} />
                     </div>
                 </div>
             </div>

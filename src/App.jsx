@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './fonts.scss';
 import './global.scss';
 import FirstScreen from './components/firstScreen/FirstScreen';
@@ -7,10 +7,11 @@ import Club from './components/club/Club';
 import Burger from './components/burger/Burger';
 
 const App = () => {
+    const [activeBurger, setActiveBurger] = useState(true);
     return (
         <>
-        <Burger />
-        <FirstScreen />
+        <Burger active={activeBurger} setActive={setActiveBurger} />
+        <FirstScreen setActiveBurger={setActiveBurger} />
         <Plus />
         <Club />
         </>

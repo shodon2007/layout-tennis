@@ -164,7 +164,8 @@ header {
 
 .HkVnVEYMbYKqWt6qsSLT {
   display: none;
-  max-width: 30px; }
+  max-width: 30px;
+  cursor: pointer; }
 
 @media (max-width: 1200px) {
   .zwe3UE5C3kgdJUqKLEVH {
@@ -391,13 +392,23 @@ header {
 /*!*********************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/burger/Burger.module.scss ***!
   \*********************************************************************************************************************************/
-.GTkNAKm0MPvLLIN9vUAL {
+.ODhlBfJAoSeFLR2vjZ8F {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  z-index: 10000;
+  z-index: 100;
   left: 0;
   right: 0;
+  opacity: 1; }
+
+.vVUHzxGFivCzRZCBG6kN {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: fixed;
+  z-index: -100;
+  left: 0;
+  right: 0;
+  opacity: 0; }
 
 .wiotzecX8pFkmOtfIlYp {
   padding: 10px;
@@ -412,7 +423,10 @@ header {
 .xzDCGIDpEqwiVDEMJNO2 {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 20px; }
+  .xzDCGIDpEqwiVDEMJNO2 > img {
+    cursor: pointer; }
 
 .RT3KEIMXm47NhzsnHETy {
   width: 30px;
@@ -421,5 +435,19 @@ header {
 
 .J_l3WrT0q61Jt8daJZHT {
   flex: 1 1 auto;
-  backdrop-filter: blur(4px); }
+  backdrop-filter: blur(4px);
+  cursor: pointer; }
+
+.h6aHAGXiDRmqzLtJLugk {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  .h6aHAGXiDRmqzLtJLugk > a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.4s ease; }
+    .h6aHAGXiDRmqzLtJLugk > a:hover {
+      color: black; }
 

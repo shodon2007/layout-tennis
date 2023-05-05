@@ -4,10 +4,10 @@ import Header from './header/Header';
 import Main from './main/Main.jsx';
 import Footer from './footer/Footer.jsx';
 
-function FirstScreen() {
+function FirstScreen({setActiveBurger}) {
   return (
     <div className={styles.firstScreen}>
-          <Header />
+          <Header setActiveBurger={setActiveBurger} />
           <Main />
           <Footer />
     </div>
