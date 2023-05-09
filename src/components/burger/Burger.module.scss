@@ -7,6 +7,10 @@
     left: 0;
     right: 0;
     opacity: 1;
+
+    .block {
+        left: 0;
+    }
 }
 
 .burgerNotActive {
@@ -17,11 +21,17 @@
     left: 0;
     right: 0;
     opacity: 0;
+
+    .block {
+        left: -300px;
+    }
 }
 
 
 
 .block {
+    transition: all 0.1s;
+    position: relative;
     padding: 10px;
     background-color: #8a8a8a;
     max-width: 100%;

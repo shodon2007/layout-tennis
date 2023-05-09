@@ -400,6 +400,8 @@ header {
   left: 0;
   right: 0;
   opacity: 1; }
+  .ODhlBfJAoSeFLR2vjZ8F .wiotzecX8pFkmOtfIlYp {
+    left: 0; }
 
 .vVUHzxGFivCzRZCBG6kN {
   display: flex;
@@ -409,8 +411,12 @@ header {
   left: 0;
   right: 0;
   opacity: 0; }
+  .vVUHzxGFivCzRZCBG6kN .wiotzecX8pFkmOtfIlYp {
+    left: -300px; }
 
 .wiotzecX8pFkmOtfIlYp {
+  transition: all 0.1s;
+  position: relative;
   padding: 10px;
   background-color: #8a8a8a;
   max-width: 100%;

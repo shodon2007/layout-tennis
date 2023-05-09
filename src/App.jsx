@@ -7,13 +7,13 @@ import Club from './components/club/Club';
 import Burger from './components/burger/Burger';
 
 const App = () => {
-    const [activeBurger, setActiveBurger] = useState(true);
+    const [activeBurger, setActiveBurger] = useState(false);
     return (
         <>
-        <Burger active={activeBurger} setActive={setActiveBurger} />
-        <FirstScreen setActiveBurger={setActiveBurger} />
-        <Plus />
-        <Club />
+            <Burger active={activeBurger} setActive={setActiveBurger} />
+            <FirstScreen setActiveBurger={setActiveBurger} />
+            <Plus />
+            <Club />
         </>
     );
 };
