@@ -457,6 +457,27 @@ header {
     .h6aHAGXiDRmqzLtJLugk > a:hover {
       color: black; }
 
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/treiners/treinerList/treinerItem/TreinerItem.module.scss ***!
+  \****************************************************************************************************************************************************************/
+.NpgI_wiTtEyK7idDc6If {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.q7zmUVWZ2duuEjJvWqBK {
+  font-size: 18px;
+  font-weight: bold; }
+
+.oZLAZFgOKJF32dCuC9yF {
+  font-size: 16px; }
+
+@media (max-width: 600px) {
+  .q7zmUVWZ2duuEjJvWqBK {
+    font-size: 16px; }
+  .oZLAZFgOKJF32dCuC9yF {
+    font-size: 15px; } }
+
 /*!*****************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/swiper/swiper.scss ***!
   \*****************************************************************************************************************************/
@@ -681,32 +702,24 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   display: flex;
   justify-content: space-between;
   gap: 10px; }
-
-.VKYPfxKwCtLhjiAXzMTw, .I1RLYb3UfKnFonFPN3Wi {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  background: #8D86C9;
-  cursor: pointer; }
+  .oTaMTEfU9DKjwMrI41lC > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #8D86C9;
+    cursor: pointer; }
 
 @media (max-width: 1200px) {
   .TLIRmoKnfH5Tka8TcR4v {
     width: 100%;
     padding: 0 10px; } }
 
-/*!****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/treiners/treinerItem/TreinerItem.module.scss ***!
-  \****************************************************************************************************************************************************/
-.YYS6LtaWzC5yo1UoGW2k {
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
+@media (max-width: 600px) {
+  .KGX2fcBSUCbTY422QW4h {
+    font-size: 2rem; } }
 
-.FB3YwEfyq3EReARkXBAK {
-  font-size: 18px;
-  font-weight: bold; }
-
-.p8pfaBEIdhacHDAusRtA {
-  font-size: 16px; }
+@media (max-width: 320px) {
+  .KGX2fcBSUCbTY422QW4h {
+    font-size: 1.5rem; } }
 
