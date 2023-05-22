@@ -88,8 +88,8 @@ const TreinerList = () => {
                 }
             }}
         >
-            {treinerList.map(trainer => {
-                return <SwiperSlide>
+            {treinerList.map((trainer, i) => {
+                return <SwiperSlide key={i}>
                     <TreinerItem trainer={trainer} />
                 </SwiperSlide>
             })}

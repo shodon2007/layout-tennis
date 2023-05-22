@@ -3,24 +3,24 @@ import goImg from '@/images/go.png';
 import styles from './Footer.module.scss';
 
 function Footer() {
-  function createCard(name) {
-    return (
-      <div className={styles.card}>
-        <div>
-          <div className={styles.subtitle}>Услуги</div>
-          <div className={styles.title}>{name}</div>
-        </div>
-        <img src={goImg} alt="go" />
-      </div>
-    )
-  };
+  const cardList = [
+    'Аренда карта',
+    'Детский теннис',
+    'Сборы команд',
+    'Расписание',
+  ]
 
   return (
     <div className={styles.main}>
-      {createCard('Аренда карта')}
-      {createCard('Детский теннис')}
-      {createCard('Сборы команд')}
-      {createCard('Расписание')}
+      {cardList.map((name, i) => {
+        return <div className={styles.card} key={i}>
+          <div>
+            <div className={styles.subtitle}>Услуги</div>
+            <div className={styles.title}>{name}</div>
+          </div>
+          <img src={goImg} alt="go" />
+        </div>
+      })}
     </div>
   )
 }

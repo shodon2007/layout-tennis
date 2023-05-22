@@ -6,20 +6,25 @@ import vkWhiteImg from '@/images/vk_white.png';
 import youtubeWhiteImg from '@/images/youtube_white.png';
 import burgerButtonImg from '@/images/burger.png';
 
-const Header = ({setActiveBurger}) => {
+const Header = ({ setActiveBurger }) => {
+    const linkList = [
+        'Главная',
+        'О клубе',
+        'Турниры',
+        'Услуги',
+        'Детский теннис',
+        'Галерея',
+        'Цены',
+        'Контакты',
+    ]
     return (
         <header className={styles.header}>
             <div className={styles.body}>
                 <img src={logoImg} alt="logo" className={styles.title} />
                 <nav className={styles.nav}>
-                    <a href="#">Главная</a>
-                    <a href="#">О клубе</a>
-                    <a href="#">Турниры</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Детский теннис</a>
-                    <a href="#">Галерея</a>
-                    <a href="#">Цены</a>
-                    <a href="#">Контакты</a>
+                    {linkList.map((el, i) => {
+                        return <a href="#" key={i}>{el}</a>
+                    })}
                 </nav>
                 <div className={styles.buttons}>
                     <div className={styles.social}>
