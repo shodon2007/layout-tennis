@@ -681,17 +681,32 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   display: flex;
   justify-content: space-between;
   gap: 10px; }
-  .oTaMTEfU9DKjwMrI41lC > img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background: #8D86C9;
-    cursor: pointer; }
 
-.VKYPfxKwCtLhjiAXzMTw {
+.VKYPfxKwCtLhjiAXzMTw, .I1RLYb3UfKnFonFPN3Wi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #8D86C9;
   cursor: pointer; }
 
-.I1RLYb3UfKnFonFPN3Wi {
-  cursor: pointer; }
+@media (max-width: 1200px) {
+  .TLIRmoKnfH5Tka8TcR4v {
+    width: 100%;
+    padding: 0 10px; } }
+
+/*!****************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/treiners/treinerItem/TreinerItem.module.scss ***!
+  \****************************************************************************************************************************************************/
+.YYS6LtaWzC5yo1UoGW2k {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.FB3YwEfyq3EReARkXBAK {
+  font-size: 18px;
+  font-weight: bold; }
+
+.p8pfaBEIdhacHDAusRtA {
+  font-size: 16px; }
 

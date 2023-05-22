@@ -19,21 +19,20 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
+}
 
-    &>img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        background: #8D86C9;
-        cursor: pointer;
+.buttonNext, .buttonPrew {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #8D86C9;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        width: 100%;
+        padding: 0 10px;
     }
-}
-
-.buttonNext {
-    cursor: pointer;
-}
-
-.buttonPrew {
-    cursor: pointer;
 }
