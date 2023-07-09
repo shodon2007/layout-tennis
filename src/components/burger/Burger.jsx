@@ -1,5 +1,4 @@
 import React from 'react'
-import logoImg from '@/images/logo.png'
 import exitImg from '@/images/burger_exit.png'
 import styles from './Burger.module.scss';
 
@@ -14,23 +13,25 @@ function Burger({ active, setActive }) {
     'Галерея',
     'Цены',
     'Контакты',
-  ]
+  ];
+
+  function burgerClick() {
+    setActive(!active)
+  }
+
   return (
-    <div className={active ? styles.burgerActive : styles.burgerNotActive}>
+    <div className={`${styles.main} ${active ? styles.burgerActive : ''}`}>
       <div className={styles.block}>
         <div className={styles.top}>
-          <img src={logoImg} alt="logo" />
-          <img className={styles.exitImg} onClick={() => setActive(!active)} src={exitImg} alt="exit" />
+          <img className={styles.exitImg} onClick={burgerClick} src={exitImg} alt="exit" />
         </div>
         <div className={styles.links}>
-          {linkList.map((name, i) => {
-            return <a href="#" key={i}>{name}</a>
-          })
-          }
+          {linkList.map((link, index) => {
+            return <a href="#" key={index}>{link}</a>
+          })}
         </div>
       </div>
-      <div className={styles.blur} onClick={() => setActive(!active)}>
-
+      <div className={styles.blur} onClick={burgerClick}>
       </div>
     </div>
   )
